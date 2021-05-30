@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Gamestyle.css">
+    </head>
+    <body>
+        <div class="q1" style="text-align: center; padding: 20px; margin: 20px;">
+        Below is a program for Variables and Assignments. Solve the code in order to escape <b>The Basement</b>
+        </div>
+
+        <pre class="code1">
+            import java.util.Scanner;
+
+            public class Basement{
+                public static void main(String[] args) {
+                    Scanner scnr = new Scanner(System.in);
+                    int rentPayment;
+                    int expenses;
+                    int yearlyTotal;
+
+                    System.out.print("What is your rentPayment per-month?: ");
+                    rentPayment=scnr.nextInt();
+
+                    System.out.print("What are your expenses per-month?: ");
+                    expenses=scnr.nextInt();
+
+                    yearlyTotal= (rentPayment + expenses) * 12;
+
+                    System.out.println("Your yearly total=" yearlyTotal);
+
+            }
+        }
+        </pre>
+
+        <div class="a1" style="text-align: left;padding:20px; margin:20px">
+            <Strong>If the user enters the following:</Strong>
+            <br>
+            <p><pre class="input1">
+                rentPayment= 850
+                expenses= 570 </pre></p>
+             What is the value of the <strong>Yearly Total</strong>?
+        </div>
+    
+        <a href="Incorrect.html" class="m1" style="padding:20px;margin:20px">Answer 1: 9,850</a>
+        <a href="Incorrect.html" class="m1" style="padding:20px;margin:20px">Answer 2: 985</a>
+        <a href="Incorrect.html" class="m1" style="padding:20px;margin:20px">Answer 3: 7,680</a>
+        <a href="Correct.html" class="m1"style="padding:20px;margin:20px">Answer 4: 17,040</a>
+
+    </body>
+</html>

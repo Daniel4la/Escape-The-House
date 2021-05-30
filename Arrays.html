@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="Gamestyle.css">
+</head>
+<body>
+    <div class="q4" style="text-align: center; padding: 20px; margin: 20px;">
+        Below is a program for Arrays. Solve the code in order to escape <b>The Door</b>
+        </div>
+
+        <pre class="code4">
+            import java.util.Scanner;
+
+            public class Door{
+                public static void main(String[] args) {
+                    final int NUM_ELEMENTS= 3;
+                    int [] vals= new int[NUM_ELEMENTS];
+                    int i;
+
+                    vals[0] = 4;
+                    vals[1] = 9;
+                    vals[2] = 7;
+
+                    vals[0] = vals[1]-5;
+                    vals[1] = vals[0];
+                    vals[2] = vals[0] * 2;
+
+                    for (i = 0, i < vals.length; i++) {
+                        System.out.print(vals[i]);
+                    }
+                 }
+                
+             }
+        </pre>
+
+        <div class="a4" style="text-align: left;padding:20px; margin:20px">
+            What is the Array's <strong>output</strong>?
+        </div>
+    
+        <a href="Incorrect.html" class="m4" style="padding:20px;margin:20px">Answer 1: 440</a>
+        <a href="Incorrect.html" class="m4" style="padding:20px;margin:20px">Answer 2: 498 </a>
+        <a href="GameOverWin.html" class="m4" style="padding:20px;margin:20px">Answer 3: 448 </a>
+        <a href="Incorrect.html" class="m4"style="padding:20px;margin:20px">Answer 4: 548 </a>
+</body>
+</html>
